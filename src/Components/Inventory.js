@@ -20,7 +20,7 @@ const InvetoryItems = () => {
     setItems({ ...items, [name]: value });
   };
   const AddToInventory = () => {
-    fetch("http://localhost:5001/addInventory", {
+    fetch("http://ShopifyServer.dhruv725.repl.co/addInventory", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -37,7 +37,7 @@ const InvetoryItems = () => {
   };
   const displayInventory = () => {
     setDisplay(true);
-    fetch("http://localhost:5001/displayInventory", {
+    fetch("http://ShopifyServer.dhruv725.repl.co/displayInventory", {
       method: "get",
       headers: { "Content-Type": "application/json" },
     })
@@ -56,7 +56,7 @@ const InvetoryItems = () => {
   };
 
   const undelete = (id) => {
-    fetch("http://localhost:5001/delete", {
+    fetch("http://ShopifyServer.dhruv725.repl.co/delete", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
