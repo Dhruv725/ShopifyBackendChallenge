@@ -10,7 +10,7 @@ const DeleteItem = () => {
 
   const submit = () => {
 
-    fetch("http://localhost:5001/delete", {
+    fetch("http://ShopifyServer.dhruv725.repl.co/delete", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
