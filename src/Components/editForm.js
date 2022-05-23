@@ -20,7 +20,7 @@ const EditForm = () => {
   };
 
   const updateInfo = () => {
-    fetch(`http://ShopifyServer.dhruv725.repl.co/updateInventory/${params.id}`, {
+    fetch(`https://ShopifyServer.dhruv725.repl.co/updateInventory/${params.id}`, {
       method: "put",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
